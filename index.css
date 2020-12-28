@@ -1,0 +1,103 @@
+.box {
+  background-color: #407088;
+  width: 310px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  left: 40%;
+  position: relative;
+  box-shadow: 0 10px 38px rgba(0, 0, 0, 0.3), 0 10px 12px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(20px);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 37px;
+  font-family: "Bebas Neue", cursive;
+  font-style: italic;
+}
+
+.form-control {
+  width: 280px;
+  height: 300px;
+  margin-top: 38px;
+  margin-left: 28px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.name,
+.email,
+.password,
+.password2 {
+  all: unset;
+  border-bottom: rgb(7, 6, 6) 1.8px solid;
+  border-left: medium none;
+  border-right: medium none;
+  border-top: medium none;
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+}
+
+input::placeholder {
+  color: black;
+
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+button {
+  all: unset;
+  background-color: black;
+  color: darkgray;
+
+  border-radius: 3px;
+  width: 60px;
+  height: 20px;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  display: flex;
+
+  font-size: 15px;
+  font-weight: lighter;
+  justify-content: center;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
+  transition: background-color 0.8s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.form-control small {
+    color: red;
+    letter-spacing: 0.4px;
+    font-weight: bold;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .form-control.error small {
+    visibility: visible;
+  }
+
+  .form-control.success input {
+    border-color: lightgreen;
+  }
+  
+  .form-control.error input {
+    border-color: red;
+    
+  }
+  
