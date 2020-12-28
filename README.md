@@ -1,5 +1,5 @@
 ## signup_form_with_vanillaJS
-###### Project to become a Vanilla Java Script Expert
+###### Project to become a Vanilla JavaScript Expert
 
 
 --- 
